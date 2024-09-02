@@ -6,6 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { TailSpin } from 'react-loader-spinner';
 
+const API_URL = "https://loflo-backend-production.up.railway.app";
+
 function Login() {
   const { login } = useAuth();
   const [email, setEmail] = useState('');
