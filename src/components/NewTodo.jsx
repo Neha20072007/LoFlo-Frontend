@@ -4,6 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from '../components/context/AuthContext'; // Adjust the path as needed
 
+const API_URL = "https://loflo-backend-production.up.railway.app";
+
 function NewTodo() {
   const [description, setDescription] = useState('');
   const { user } = useAuth(); // Get user details from AuthContext
