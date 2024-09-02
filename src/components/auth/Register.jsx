@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { TailSpin } from 'react-loader-spinner'; 
 // import leavesBackground from '/leaves.svg';
 
+const API_URL = "https://loflo-backend-production.up.railway.app";
+
 function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
