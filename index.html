@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoFlo</title>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- <img src="\assets\leaves.svg" className="absolute top-[-50px] right-[-40px] w-24 h-24 opacity-20" alt="Leaf Background" /> -->
+  </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<style is:global>
+	:root {
+		--green-dark: #2d5134;
+		--green-mid: #6a994e;
+		--green-light: #a7c957;
+		--stone: #f2e8cf;
+		--red: #822f31;
+		--yellow: #f4e285;
+
+		--font-heading: 'Young Serif', serif;
+		--font-body: 'IBM Plex Mono', monospace;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		font-size: 100%;
+		background-color: var(--green-dark);
+		background-image: url("leaves.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+
+	body {
+		max-width: 1000px;
+		margin: auto;
+		background-color: rgba(45, 81, 52, 0.95);
+		color: var(--stone);
+		font-family: var(--font-body);
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding: clamp(1rem, 2vw, 2rem);
+	}
+
+	h1 {
+		font-family: var(--font-heading);
+	}
+	
+	h1 {
+		font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	footer {
+		margin-top: auto;
+	}
+
+	footer p {
+		font-size: 0.8rem;
+		line-height: 1.4;
+		text-align: center;
+	}
+
+	footer p a {
+		color: inherit;
+		border-radius: 0.5rem;
+	}
+
+	footer p a:focus,
+	footer p a:focus-visible {
+  outline: transparent;
+  outline-style: solid;
+  box-shadow: var(--green-dark) 0 0 0 0.08rem, var(--green-light) 0 0 0 0.32rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+</style>
