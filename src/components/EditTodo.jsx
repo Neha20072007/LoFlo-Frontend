@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from '../components/context/AuthContext'; // Adjust the path as needed
 
+const API_URL = "https://loflo-backend-production.up.railway.app";
+
 function EditTodo() {
   const { id } = useParams();
   const [description, setDescription] = useState('');
