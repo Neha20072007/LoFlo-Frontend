@@ -5,6 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from './context/AuthContext'; // Update the path as needed
 import { useNavigate } from 'react-router-dom';
 
+const API_URL = "https://loflo-backend-production.up.railway.app";
+
 function Index() {
   const { user } = useAuth(); // Get user info from context
   const [todos, setTodos] = useState([]);
